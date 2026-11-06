@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header>
+            <h1>📚 Study Planner</h1>
+            <p>Stay on top of your assignments.</p>
+        </header>
+
+        <!-- Add Assignment Form -->
+        <section class="add-section">
+            <h2>Add New Task</h2>
+            <form id="assignment-form">
+                <div class="input-group">
+                    <input type="text" id="subject" placeholder="Subject (e.g., Web Tech)" required>
+                    <input type="text" id="title" placeholder="Assignment Title" required>
+                </div>
+                <div class="input-group">
+                    <input type="date" id="deadline" required>
+                    <select id="status">
+                        <option value="Pending">Pending</option>
+                        <option value="In Progress">In Progress</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">+ Add Assignment</button>
+            </form>
+        </section>
+
+        <!-- Search and Filter -->
+        <section class="controls">
+            <input type="text" id="search" placeholder="🔍 Search assignments...">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="All">All</button>
+                <button class="filter-btn" data-filter="Pending">Pending</button>
+                <button class="filter-btn" data-filter="In Progress">In Progress</button>
+                <button class="filter-btn" data-filter="Completed">Completed</button>
+            </div>
+        </section>
+
+        <!-- Assignment List -->
+        <section id="assignment-list" class="list-section">
+            <!-- Tasks will be injected here by JavaScript -->
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
