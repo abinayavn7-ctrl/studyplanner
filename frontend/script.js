@@ -1,6 +1,5 @@
 // IMPORTANT: If your backend is on a different port, change it here.
-const API_URL = 'https://bf5dd006a29a-0af401c7-5300.ws6.app/proxy/3000/api/assignments';
-let allAssignments = [];
+const API_URL = 'https://studyplanner-ktmhxq5a-abinayavn7-ctrl.vercel.app/api/assignments';
 let currentFilter = 'All';
 let searchQuery = '';
 
